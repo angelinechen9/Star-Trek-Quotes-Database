@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href = "/css/styles.css" rel = "stylesheet" type = "text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <form action = "/quotes/{{id}}?_method=PUT" method = "post">
+      <label id = "quotelabel" for = "quote">Quote</label>
+        <br>
+        <textarea id = "quote" name = "quote" cols = "50" rows = "20">{{quote}}</textarea>
+        <br>
+        <label id = "characterlabel" for = "character">Character</label>
+        <br>
+        <input id = "character" type = "text" name = "character" value = "{{character}}">
+        <br>
+        <label id = "tvseriesormovielabel" for = "tvseriesormovie">TV Series or Movie</label>
+        <br>
+        <input id = "tvseriesormovie" type = "text" name = "tvseriesormovie" value = "{{tvseriesormovie}}">
+        <br>
+        <input id = "submit" type = "submit" value = "Submit">
+    </form>
+  </body>
+</html>
